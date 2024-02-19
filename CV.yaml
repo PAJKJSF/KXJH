@@ -97,7 +97,7 @@ i: &i {type: http, behavior: ipcidr, interval: 86400}
 ###结束
 
 proxy-providers:
-  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url: https://gist.githubusercontent.com/Null404bad/113484bd0a73117d2b5096c4fd41d6dd/raw/}
+  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url: }
     # 在此将"http://your-service-provider"替换为你的机场订阅，推荐使用base64或者node list
     # Sub-Store生成的链接,可以直接替换上述url引号中的部分,具体见Sub-Store教程         
                
