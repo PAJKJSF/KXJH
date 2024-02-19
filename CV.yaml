@@ -149,8 +149,6 @@ proxy-groups:
 
   - {name: 🇨🇳 台湾节点, <<: *auto, filter: "(?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
 
-  - {name: QB 全部节点, <<: *}
-
   - {name: ♻️ 自动选择, <<: *auto}
 
   - {name: ⚠️ 故障转移, <<: *fallback}
