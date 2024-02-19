@@ -107,7 +107,7 @@ proxy-groups:
 
   #分流分组
 
-  - {name: 🚀 手动切换, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT, QB 全部节点]}
+  - {name: 🚀 手动切换, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT]}
 
   - {name: 🌏 国外网站, <<: *pg}
 
@@ -149,8 +149,6 @@ proxy-groups:
 
   - {name: 🇨🇳 台湾节点, <<: *auto, filter: "(?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
 
-  - {name: QB 全部节点, <<: *}
-
   - {name: ♻️ 自动选择, <<: *auto}
 
   - {name: ⚠️ 故障转移, <<: *fallback}
@@ -171,12 +169,12 @@ rule-providers:
 
  # 微软服务 
  OneDrive: {<<: *c, format: text, path: ./rule-providers/OneDrive.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list}
+ Github: {<<: *c, format: text, path: ./rule-providers/Github.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list}
  Microsoft: {<<: *c, format: text, path: ./rule-providers/Microsoft.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list}
 
  # 谷歌服务
  YouTube: {<<: *c, format: text, path: ./rule-providers/YouTube.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list}
  Google: {<<: *c, format: text, path: ./rule-providers/Google.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list}
- Github: {<<: *c, format: text, path: ./rule-providers/Github.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list}
 
  # 电报消息
  Telegram: {<<: *c, format: text, path: ./rule-providers/Telegram.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list}
